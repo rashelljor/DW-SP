@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda — Star Park</title>
-    <link rel="stylesheet" href="pagPrincipal/estilos.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='50%' text-anchor='middle' dominant-baseline='central' font-size='80'>✨</text></svg>"/>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="tienda.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="pagPrincipal/index.html"><img src="img/logostar.png" alt="Star Park Logo"></a>
+            <a href="index.html"><img src="img/logostar.png" alt="Star Park Logo"></a>
             <ul>
-                <li><a href="pagPrincipal/index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
             </ul>
             <a class="botonAmarillo" href="carrito.html">🛒 Ver carrito</a>
@@ -21,14 +22,58 @@
     </header>
 
     <main>
+        <section id="inicio" class="hero">
+        <img src="../img/portada02.png" alt="Galaxia con planetas y naves espaciales" >
+        </section>
+        
         <div class="seccionCabecera">
-            <h2>COFRE ESTELAR</h2>
+            <h2>PROMOCIONES GALÁCTIAS</h2>
+            <p class="etiquetaGris">Promociones, descuentos y recompensas especiales. 🚀</p>
+        </div>
+        <div class="grillaTienda">
+            <div class="tarjetaServicio">
+                <img src="img/vis02.png" alt="Niños en el trampolín, Aventura Espacial">
+                <div class="info">
+                    <h3>🧑‍🚀 Exploradores Espaciales</h3>
+                    <p>3 tickets para ingresar a "Aventura espacial" por 20 minutos</p>
+                    <p>S/ 45.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Combo 3 Exploradores Espaciales', 45)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+            <div class="tarjetaServicio">
+                <img src="img/vis03.png" alt="área de tobogán y columpios, Misión Marciana">
+                <div class="info">
+                    <h3>👽 Astronautas en Marte</h3>
+                    <p>2 tickets para ingresar a "Misión Marciana" por 30 minutos</p>
+                    <p>S/ 40.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Combo 2Astronautas en Marte', 40)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+            <div class="tarjetaServicio">
+                <img src="img/vis04.png" alt="Niño en la cabina de control de la nave, Aventura Espacial">
+                <div class="info">
+                    <h3>Piloto de Estrellas</h3>
+                    <p>1 Ticket para ingresar a todos los juegos del parque por todo el tiempo que desees</p>
+                    <p>S/ 60.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Piloto de Estrellas', 60)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="seccionCabecera">
+            <h2>BOTÍN ESPACIAL</h2>
             <p class="etiquetaGris">Elige tu misión y añádela al carrito 🚀</p>
         </div>
 
         <div class="grillaTienda">
             <div class="tarjetaServicio">
-                <img src="img/misionmarciana01.png" alt="Misión Marciana">
+                <img src="img/misionmarciana01.png" alt="Piscina de pelotas y sensores, Misión Marciana">
                 <div class="info">
                     <h3>Misión Marciana</h3>
                     <p>15 minutos</p>
@@ -40,7 +85,7 @@
             </div>
 
             <div class="tarjetaServicio">
-                <img src="img/misionmarciana01.png" alt="Misión Marciana">
+                <img src="img/misionmarciana02.png" alt="Bloques armables, piscina de pelotas y árbol para escalar,Misión Marciana">
                 <div class="info">
                     <h3>Misión Marciana</h3>
                     <p>30 minutos</p>
@@ -52,7 +97,7 @@
             </div>
 
             <div class="tarjetaServicio">
-                <img src="img/aventuraespacial01.png" alt="Aventura Espacial">
+                <img src="img/aventuraespacial02.png" alt="Entrada y área de espera para padres,Aventura Espacial">
                 <div class="info">
                     <h3>Aventura Espacial</h3>
                     <p>20 minutos</p>
@@ -64,7 +109,7 @@
             </div>
 
             <div class="tarjetaServicio">
-                <img src="img/aventuraespacial01.png" alt="Aventura Espacial">
+                <img src="img/aventuraespacial01.png" alt="Área de juegos, Aventura Espacial">
                 <div class="info">
                     <h3>Aventura Espacial</h3>
                     <p>30 minutos</p>
@@ -76,7 +121,7 @@
             </div>
 
             <div class="tarjetaServicio">
-                <img src="img/maquinas.png" alt="Aventura Ilimitada">
+                <img src="img/vis05.png" alt="Entrada del parque, Star Park">
                 <div class="info">
                     <h3>Aventura Ilimitada</h3>
                     <p>1 hora</p>
@@ -88,18 +133,17 @@
             </div>
 
             <div class="tarjetaServicio">
-                <img src="img/cumpleaños.png" alt="Cumpleaños Espacial">
+                <img src="img/cumpleaños.png" alt="Cumpleaños Espaciales, ejemplo de decoración y animación">
                 <div class="info">
                     <h3>Cumpleaños Espacial</h3>
                     <p>Evento completo</p>
-                    <p>S/ 120.00</p>
-                    <button type="button" onclick="agregarAlCarrito('Cumpleaños Espacial', 120)">
+                    <p>S/ 1200.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Cumpleaños Espacial', 1200)">
                         + Añadir al carrito
                     </button>
                 </div>
             </div>
         </div>
-
     </main>
 
     <footer>
