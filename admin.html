@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Star Park</title>
+    <link rel="stylesheet" href="pagPrincipal/estilos.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logostar.png" alt="Star Park Logo"></a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="seccionCabecera">
+            <h2>PANEL DE RESERVAS</h2>
+            <p class="etiquetaGris">Todas las reservas registradas 📋</p>
+        </div>
+
+        <div class="glass bloqueAdmin">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de visita</th>
+                        <th>Total</th>
+                        <th>Fecha de registro</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerInterior">
+            <div>
+                <p class="footerNombre">STAR PARK</p>
+                <p class="etiquetaGris">©2026 FAMILY PARK S.A.C.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

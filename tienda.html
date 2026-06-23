@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda — Star Park</title>
+    <link rel="stylesheet" href="pagPrincipal/estilos.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="pagPrincipal/index.html"><img src="img/logostar.png" alt="Star Park Logo"></a>
+            <ul>
+                <li><a href="pagPrincipal/index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+            <a class="botonAmarillo" href="carrito.html">🛒 Ver carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="seccionCabecera">
+            <h2>COFRE ESTELAR</h2>
+            <p class="etiquetaGris">Elige tu misión y añádela al carrito 🚀</p>
+        </div>
+
+        <div class="grillaTienda">
+            <div class="tarjetaServicio">
+                <img src="img/misionmarciana01.png" alt="Misión Marciana">
+                <div class="info">
+                    <h3>Misión Marciana</h3>
+                    <p>15 minutos</p>
+                    <p>S/ 15.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Misión Marciana 15 min', 15)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="tarjetaServicio">
+                <img src="img/misionmarciana01.png" alt="Misión Marciana">
+                <div class="info">
+                    <h3>Misión Marciana</h3>
+                    <p>30 minutos</p>
+                    <p>S/ 25.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Misión Marciana 30 min', 25)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="tarjetaServicio">
+                <img src="img/aventuraespacial01.png" alt="Aventura Espacial">
+                <div class="info">
+                    <h3>Aventura Espacial</h3>
+                    <p>20 minutos</p>
+                    <p>S/ 20.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Misión Marciana 20 min', 20)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="tarjetaServicio">
+                <img src="img/aventuraespacial01.png" alt="Aventura Espacial">
+                <div class="info">
+                    <h3>Aventura Espacial</h3>
+                    <p>30 minutos</p>
+                    <p>S/ 25.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Misión Marciana 30 min', 25)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="tarjetaServicio">
+                <img src="img/maquinas.png" alt="Aventura Ilimitada">
+                <div class="info">
+                    <h3>Aventura Ilimitada</h3>
+                    <p>1 hora</p>
+                    <p>S/ 45.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Aventura Ilimitada', 45)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="tarjetaServicio">
+                <img src="img/cumpleaños.png" alt="Cumpleaños Espacial">
+                <div class="info">
+                    <h3>Cumpleaños Espacial</h3>
+                    <p>Evento completo</p>
+                    <p>S/ 120.00</p>
+                    <button type="button" onclick="agregarAlCarrito('Cumpleaños Espacial', 120)">
+                        + Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerInterior">
+            <div>
+                <p class="footerNombre">STAR PARK</p>
+                <p class="etiquetaGris">©2026 FAMILY PARK S.A.C.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tienda.js"></script>
+
+</body>
+</html>
